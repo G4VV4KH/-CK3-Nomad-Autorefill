@@ -1,0 +1,30 @@
+﻿na_toggle_autorefill = {
+	scope = character
+	is_shown = { na_autorefill_available_trigger = yes }
+	is_valid = { na_autorefill_available_trigger = yes }
+	effect = { na_autorefill_toggle_effect = yes }
+}
+
+na_select_herd = {
+	scope = character
+	is_shown = { na_autorefill_available_trigger = yes }
+	is_valid = { na_autorefill_available_trigger = yes }
+	effect = {
+		if = {
+			limit = { na_autorefill_available_trigger = yes }
+			remove_variable = na_autorefill_gold
+		}
+	}
+}
+
+na_select_gold = {
+	scope = character
+	is_shown = { na_autorefill_available_trigger = yes }
+	is_valid = { na_autorefill_available_trigger = yes }
+	effect = {
+		if = {
+			limit = { na_autorefill_available_trigger = yes }
+			set_variable = { name = na_autorefill_gold value = yes }
+		}
+	}
+}

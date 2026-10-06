@@ -1,0 +1,2 @@
+# Preserve reviewed runtime bytes on every checkout.
+* -text

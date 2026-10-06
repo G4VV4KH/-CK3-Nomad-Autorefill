@@ -1,0 +1,26 @@
+﻿# Character-local scheduled on_action. Delayed on_actions persist in saves.
+# Do not put enabled-state in `trigger`: an off-state tick must clear its marker.
+na_autorefill_monthly_tick = {
+	effect = {
+		remove_variable = na_autorefill_loop_pending
+		if = {
+			limit = { na_autorefill_enabled_trigger = yes }
+			na_autorefill_monthly_effect = yes
+			na_autorefill_schedule_effect = yes
+		}
+	}
+}
+
+# Resume an existing character's opt-in after returning to them or returning to
+# nomadic government. These hooks never copy preferences to a successor.
+on_player_character_change = {
+	on_actions = { na_autorefill_resume }
+}
+
+on_government_change = {
+	on_actions = { na_autorefill_resume }
+}
+
+na_autorefill_resume = {
+	effect = { na_autorefill_schedule_effect = yes }
+}

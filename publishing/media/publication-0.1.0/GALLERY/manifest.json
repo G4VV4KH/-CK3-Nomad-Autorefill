@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "ai_generated": false,
+  "images": [
+    {
+      "order": 1,
+      "file": "01-monthly-reinforcement.jpg",
+      "caption": "Monthly reinforcement controls and tooltip in English. Automation is off; Herd is selected, with Gold available as the alternative.",
+      "bytes": 511797,
+      "sha256": "816a0c36e59d1725688dbea4a5bbdd2ef212f5ba23709a9f8b69a34aa764bd16",
+      "width": 1920,
+      "height": 1080,
+      "ai_generated": false,
+      "original_sha256": "319855edf0b6d5af5e33387037f02f8c73b3a5b70daf7ef3413032b0129a2c9f",
+      "observed_state": [
+        "English controls and tooltip visible",
+        "Monthly reinforcement unchecked",
+        "Herd selected",
+        "Gold alternative visible"
+      ],
+      "not_established": [
+        "Russian rendering",
+        "Gold selected state",
+        "Enabled state",
+        "A monthly transaction"
+      ],
+      "transformation": "Same-size JPEG encoding only; complete frame retained. No overlays, retouching or UI changes.",
+      "original_retention": "Original PNG retained unchanged by the maintainer; its content hash is recorded below."
+    }
+  ]
+}

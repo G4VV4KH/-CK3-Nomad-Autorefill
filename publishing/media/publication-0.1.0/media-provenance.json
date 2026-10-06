@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "mod": "Nomad Autorefill",
+  "version": "0.1.0",
+  "date": "2026-10-06",
+  "path_base": "repository root",
+  "public_credit": "Cover artwork was generated with AI.",
+  "cover_generator": "OpenAI image_gen",
+  "creative_brief": "A medieval wood-and-bronze machine assembles nomadic warriors and horses for young Temujin, using the owner-supplied CK3 portrait as the likeness reference; readable NOMAD AUTOREFILL title.",
+  "selected_masters": [
+    {
+      "role": "square cover",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "aa0e99f441f2035e3e7922a9910713cce4de8c64a0962876451e8d1be9132c33"
+    },
+    {
+      "role": "wide cover",
+      "width": 1672,
+      "height": 941,
+      "sha256": "0eb179e28954d8ebd24844001026de5cee39d77baa09380528f66c42b5dd11c9"
+    }
+  ],
+  "master_retention": "Unchanged originals and full generation records retained by the maintainer; this repository includes selected publication exports.",
+  "transforms": "Owner-approved deterministic System.Drawing HighQualityBicubic contain scaling on RGB(15,12,9). No cropping or stretching. Wide export has approximately 0.5101 output pixels of padding per side and JPEG quality 92. Screenshot retains 1920x1080 full frame, JPEG quality 90, without overlays, retouching or UI changes.",
+  "screenshot_ai_generated": false,
+  "screenshot_original_sha256": "319855edf0b6d5af5e33387037f02f8c73b3a5b70daf7ef3413032b0129a2c9f",
+  "files": [
+    {
+      "path": "thumbnail.png",
+      "bytes": 686637,
+      "sha256": "c2ae2180ed06af6062497b3f77f12ddeac2d0653b3ba9b3c76047151d26d5dac"
+    },
+    {
+      "path": "publishing/media/publication-0.1.0/cover-square.png",
+      "bytes": 2691997,
+      "sha256": "84c1e045422805a44a8944975318d7a9ac423c928e8d5e3ed7952c5596ac3472"
+    },
+    {
+      "path": "publishing/media/publication-0.1.0/cover-paradox.jpg",
+      "bytes": 737877,
+      "sha256": "8600bc8a5c26dd7f76570906e8229e8d90a98fdf2d81a6b283409f3b48301378"
+    },
+    {
+      "path": "publishing/media/publication-0.1.0/GALLERY/01-monthly-reinforcement.jpg",
+      "bytes": 511797,
+      "sha256": "816a0c36e59d1725688dbea4a5bbdd2ef212f5ba23709a9f8b69a34aa764bd16"
+    },
+    {
+      "path": "publishing/media/publication-0.1.0/GALLERY/manifest.json",
+      "bytes": 1139,
+      "sha256": "baa2fd85b26d95adfb51a9541b08b630cbe420dd132561386c7a8ef3f1c601c4"
+    }
+  ]
+}

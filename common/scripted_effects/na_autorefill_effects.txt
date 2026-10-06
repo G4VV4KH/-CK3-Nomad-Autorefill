@@ -1,0 +1,70 @@
+﻿# Character scope. Called by the scheduler and directly by the native test fixture.
+# Does not schedule a tick, change preferences, or alter ordinary upkeep.
+na_autorefill_monthly_effect = {
+	if = {
+		limit = { na_autorefill_enabled_trigger = yes }
+		save_scope_as = na_owner
+		# Vanilla conversion values expect these named owner scopes.
+		save_scope_as = laamp_temp
+		save_scope_as = nomad_temp
+		every_maa_regiment = {
+			save_scope_as = na_regiment
+			if = {
+				limit = { na_autorefill_regiment_eligible_trigger = yes }
+				save_scope_value_as = {
+					name = na_before_troops
+					value = maa_current_troops_count
+				}
+				if = {
+					limit = { scope:na_owner = { has_variable = na_autorefill_gold } }
+					if = {
+						limit = { na_autorefill_gold_troops_value >= 1 }
+						change_maa_troops_count = na_autorefill_gold_troops_value
+						save_scope_value_as = { name = na_payment value = na_autorefill_gold_cost_value }
+						scope:na_owner = { remove_short_term_gold = scope:na_payment }
+					}
+				}
+				else = {
+					if = {
+						limit = { na_autorefill_herd_troops_value >= 1 }
+						change_maa_troops_count = na_autorefill_herd_troops_value
+						save_scope_value_as = { name = na_payment value = na_autorefill_herd_cost_value }
+						scope:na_owner.domicile = {
+							change_herd = { value = scope:na_payment multiply = -1 }
+						}
+					}
+				}
+			}
+		}
+		# Do not carry a regiment reference into a future scheduled tick: the
+		# player may disband that regiment before the next month.
+		clear_saved_scope = na_regiment
+	}
+}
+
+# The pending marker is not cleared by the checkbox. Off/on before an existing
+# tick therefore cannot add a second loop or accelerate the next refill.
+na_autorefill_schedule_effect = {
+	if = {
+		limit = {
+			na_autorefill_enabled_trigger = yes
+			NOT = { has_variable = na_autorefill_loop_pending }
+		}
+		set_variable = { name = na_autorefill_loop_pending value = yes }
+		trigger_event = { on_action = na_autorefill_monthly_tick months = 1 }
+	}
+}
+
+na_autorefill_toggle_effect = {
+	if = {
+		limit = { na_autorefill_available_trigger = yes }
+		if = {
+			limit = { has_variable = na_autorefill_enabled }
+			remove_variable = na_autorefill_enabled
+		}
+		else = {
+			set_variable = { name = na_autorefill_enabled value = yes }
+			na_autorefill_schedule_effect = yes
+		}
+	}
+}

@@ -1,0 +1,63 @@
+﻿# Character scope. AI rulers are deliberately outside this opt-in UI feature.
+na_autorefill_available_trigger = {
+	is_alive = yes
+	is_ai = no
+	is_ruler = yes
+	has_mpo_dlc_trigger = yes
+	government_has_flag = government_is_nomadic
+	exists = domicile
+}
+
+na_autorefill_enabled_trigger = {
+	na_autorefill_available_trigger = yes
+	has_variable = na_autorefill_enabled
+}
+
+# Army scope, with scope:na_owner. Use the current barony controller so occupied
+# enemy land held by our side is usable, but occupied home land held by an enemy is not.
+na_autorefill_army_safe_trigger = {
+	army_is_moving = no
+	is_army_in_combat = no
+	is_raid_army = no
+	is_barter_army = no
+	location = {
+		is_sea_province = no
+		is_river_province = no
+		barony_controller = {
+			OR = {
+				top_liege = scope:na_owner.top_liege
+				is_allied_to = scope:na_owner
+				top_liege = { is_allied_to = scope:na_owner.top_liege }
+			}
+		}
+	}
+}
+
+# Regiment scope, with scope:na_owner and scope:na_regiment.
+# A regiment split between armies is skipped if ANY of its portions is unsafe:
+# change_maa_troops_count acts on the whole regiment, not one army portion.
+na_autorefill_regiment_eligible_trigger = {
+	is_personal_maa_regiment = yes
+	is_regular_maa_regiment = yes
+	# Code-created Riders of the Horde come from Herd; they are not recruited MAA.
+	NOT = { is_unit_type = nomadic_horde }
+	is_maa_in_combat = no
+	maa_current_troops_count < maa_max_troops_count
+	OR = {
+		is_raised = no
+		AND = {
+			scope:na_owner = {
+				any_army = {
+					any_army_maa_regiment = { this = scope:na_regiment }
+					na_autorefill_army_safe_trigger = yes
+				}
+				NOT = {
+					any_army = {
+						any_army_maa_regiment = { this = scope:na_regiment }
+						na_autorefill_army_safe_trigger = no
+					}
+				}
+			}
+		}
+	}
+}

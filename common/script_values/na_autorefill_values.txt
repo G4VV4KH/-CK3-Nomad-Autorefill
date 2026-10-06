@@ -1,0 +1,52 @@
+﻿# Regiment scope unless stated otherwise. CK3 `max` is an upper clamp and
+# `min` a lower clamp. Keep whole soldiers and pay only for the actual change.
+na_autorefill_monthly_cap_value = {
+	value = maa_max_troops_count
+	multiply = define:NArmy|REGIMENT_MONTHLY_MAA_REINFORCE_SPEED
+	floor = yes
+	min = 0
+}
+
+na_autorefill_deficit_value = {
+	value = maa_max_troops_count
+	subtract = maa_current_troops_count
+	min = 0
+}
+
+na_autorefill_gold_troops_value = {
+	value = scope:na_owner.gold
+	min = 0
+	multiply = gold_refill_value
+	floor = yes
+	max = na_autorefill_monthly_cap_value
+	max = na_autorefill_deficit_value
+	min = 0
+}
+
+na_autorefill_herd_troops_value = {
+	value = scope:na_owner.domicile.herd
+	min = 0
+	multiply = herd_refill_value
+	floor = yes
+	max = na_autorefill_monthly_cap_value
+	max = na_autorefill_deficit_value
+	min = 0
+}
+
+na_autorefill_gold_cost_value = {
+	value = maa_current_troops_count
+	subtract = scope:na_before_troops
+	min = 0
+	divide = gold_refill_value
+	max = scope:na_owner.gold
+	min = 0
+}
+
+na_autorefill_herd_cost_value = {
+	value = maa_current_troops_count
+	subtract = scope:na_before_troops
+	min = 0
+	divide = herd_refill_value
+	max = scope:na_owner.domicile.herd
+	min = 0
+}

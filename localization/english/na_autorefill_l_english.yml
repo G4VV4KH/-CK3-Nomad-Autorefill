@@ -1,0 +1,8 @@
+﻿l_english:
+ na_autorefill_label:0 "Monthly reinforcement"
+ na_autorefill_tooltip:0 "#T Monthly reinforcement#!\nWhile enabled, personal Men-at-Arms recover up to 10% of their maximum strength each month, starting one month after activation. Only the soldiers actually restored are paid for, at the normal nomadic refill price. If the selected resource is scarce, fewer soldiers return.\n\nRaised regiments must be stationary on land controlled by your realm or an ally, outside combat, raiding and bartering. A regiment split between armies waits if any part is ineligible.\n\nSwitching this off stops automatic reinforcement and its payments. Manual reinforcement remains available. New rulers start with this option off."
+ na_payment_label:0 "Pay with:"
+ na_payment_herd:0 "[herd_i] Herd"
+ na_payment_gold:0 "[gold_i] Gold"
+ na_payment_herd_tooltip:0 "#T Reinforce with Herd#!\nSpend Herd to restore soldiers, using the normal nomadic refill price and its Martial and difficulty modifiers. The selected payment resource is never replaced automatically."
+ na_payment_gold_tooltip:0 "#T Reinforce with Gold#!\nSpend Gold to restore soldiers, using the normal nomadic refill price and its Martial, perk and difficulty modifiers. The selected payment resource is never replaced automatically."

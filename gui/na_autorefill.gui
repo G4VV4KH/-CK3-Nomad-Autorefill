@@ -1,0 +1,64 @@
+# Nomad Autorefill controls are instantiated in the native army footer.
+# Saved character variables own the state; opening/closing this panel does not
+# change reinforcement policy or start work. The picker stays usable when off.
+types NomadAutorefillTypes {
+	type na_autorefill_controls = vbox {
+		name = "na_autorefill_controls"
+		layoutpolicy_horizontal = expanding
+		visible = "[IsNomad( GetPlayer )]"
+		spacing = 2
+
+		button_checkbox_label = {
+			name = "na_autorefill_toggle"
+			layoutpolicy_horizontal = expanding
+			enabled = "[GetScriptedGui('na_toggle_autorefill').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+			onclick = "[GetScriptedGui('na_toggle_autorefill').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+			tooltip = "na_autorefill_tooltip"
+			blockoverride "checkbox" {
+				checked = "[GetPlayer.MakeScope.GetVariable('na_autorefill_enabled').IsSet]"
+			}
+			blockoverride "text" {
+				text = "na_autorefill_label"
+				max_width = 300
+			}
+		}
+
+		hbox = {
+			name = "na_autorefill_payment_picker"
+			layoutpolicy_horizontal = expanding
+			spacing = 8
+
+			text_single = {
+				text = "na_payment_label"
+				max_width = 85
+			}
+			button_radio_label = {
+				name = "na_autorefill_pay_herd"
+				enabled = "[GetScriptedGui('na_select_herd').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+				onclick = "[GetScriptedGui('na_select_herd').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+				tooltip = "na_payment_herd_tooltip"
+				blockoverride "radio" {
+					frame = "[BoolTo1And2( Not( GetPlayer.MakeScope.GetVariable('na_autorefill_gold').IsSet ) )]"
+				}
+				blockoverride "text" {
+					text = "na_payment_herd"
+					max_width = 100
+				}
+			}
+			button_radio_label = {
+				name = "na_autorefill_pay_gold"
+				enabled = "[GetScriptedGui('na_select_gold').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+				onclick = "[GetScriptedGui('na_select_gold').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+				tooltip = "na_payment_gold_tooltip"
+				blockoverride "radio" {
+					frame = "[BoolTo1And2( GetPlayer.MakeScope.GetVariable('na_autorefill_gold').IsSet )]"
+				}
+				blockoverride "text" {
+					text = "na_payment_gold"
+					max_width = 100
+				}
+			}
+			expand = {}
+		}
+	}
+}

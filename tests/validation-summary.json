@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "mod": "Nomad Autorefill",
+  "version": "0.1.0",
+  "game_version": "1.20.0.4",
+  "validation_date": "2026-10-06",
+  "native_status": "PASS",
+  "passed_gameplay_assertions": 29,
+  "expected_gameplay_assertions": 29,
+  "gui_command_checks": 6,
+  "calendar_days": 64,
+  "monthly_scheduler_verified": true,
+  "checkbox_off_stops_scheduler_verified": true,
+  "production_has_test_overlay": false,
+  "mod_owned_script_errors": 0,
+  "mod_owned_gui_warnings": 0,
+  "native_receipt_sha256": "252814f60490d5fd7ac7f0f034170d54d2a895a0a0eac3ffd3634f6460164344",
+  "user_smoke_receipt_sha256": "6163f49f9770e711f3ba1f34f9b3a8366ac7d34da3f239b5aa24afc64f1b8190",
+  "native_tested_runtime_sha256": {
+    "common/on_action/na_autorefill_on_actions.txt": "afbb9c91604900e9e212083c4d6054bec8f61cac9401cf0c6c7ed5f383f45830",
+    "common/script_values/na_autorefill_values.txt": "37a9944be545bd31c6710d9b20d27ae24cc96f46bdbbf1d7e4b2cfc5b7c9fae4",
+    "common/scripted_effects/na_autorefill_effects.txt": "9bdc05743c192a78ab75f1a218bf96ca27b92148804c2a44ec292aeb6d981706",
+    "common/scripted_guis/na_autorefill_guis.txt": "81ba5a3b87d5a83f32307d273b18cf95de7c7269729d6f2c20cb12d77f87b459",
+    "common/scripted_triggers/na_autorefill_triggers.txt": "0fd26b8c8512567cbf3c0e626aa4f29c9b7a86c38affcc49809692b421703b2e",
+    "gui/na_autorefill.gui": "0d203860d995f624b9ec410bf3cbd77631c439c05030b2b80c00b2e53a819189",
+    "gui/window_military.gui": "2e5fc7f8a5ed8328a76f34de96f8ad89652a8ae5474bf6749c312e0b5c007854",
+    "localization/english/na_autorefill_l_english.yml": "84fd252eb78710e04e3000280c3277a4f7ab44bfdb9c63ac66c973d2913e39b9",
+    "localization/russian/na_autorefill_l_russian.yml": "59c671474b53a3a464f183d10590cc8c2fb0062b3dfb569011c47b3416a63499"
+  },
+  "user_campaign_scope": "Three saved snapshots have Herd mode enabled and one future tick each; two Mangudai regiments recover from 244/300 to 300/300. Exact payment, intervening manual refill and actual reload are not isolated.",
+  "visual_scope": "One authentic English screenshot: automation off, Herd selected, Gold option and tooltip visible.",
+  "not_verified": [
+    "Russian visual layout",
+    "Gold-selected visual state",
+    "Enabled visual state",
+    "Raised/split-army scenarios",
+    "Interactive save/reload",
+    "Succession",
+    "Government transitions",
+    "Universal cross-mod compatibility"
+  ],
+  "evidence_distribution": "Sanitized summary only. Private campaign saves, raw logs and the disposable native harness are not included."
+}
