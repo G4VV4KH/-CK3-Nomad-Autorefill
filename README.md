@@ -61,8 +61,8 @@ For a reinforcement problem, include your CK3 version, other active mods, select
 
 ## Find this mod elsewhere
 
-- Steam Workshop — publication pending.
-- Paradox Mods — publication pending.
+- [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3814793283)
+- [Paradox Mods](https://mods.paradoxplaza.com/mods/162238/Any)
 - [Nexus Mods](https://www.nexusmods.com/crusaderkings3/mods/409)
 - [GitHub](https://github.com/G4VV4KH/-CK3-Nomad-Autorefill)
 
