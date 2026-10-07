@@ -1,0 +1,8 @@
+﻿l_spanish:
+ na_autorefill_label:0 "Refuerzo mensual"
+ na_autorefill_tooltip:0 "#T Refuerzo mensual#!\nMientras esta opción esté activada, tus regimientos personales de hombres de armas recuperan hasta un 10% de su fuerza máxima cada mes. El primer refuerzo llega un mes después de activarla. Solo pagas por los soldados que se añaden realmente, al precio habitual del refuerzo nómada. Si el recurso elegido no alcanza, regresan menos soldados.\n\nLos regimientos reclutados deben estar inmóviles en tierra controlada por tu señorío o un aliado, sin combatir, asaltar ni practicar el trueque. Si un regimiento está repartido entre varios ejércitos, espera si alguna de sus partes no cumple estas condiciones.\n\nDesactivar esta opción detiene el refuerzo automático y sus pagos. El refuerzo manual sigue disponible. Los nuevos gobernantes comienzan con esta opción desactivada."
+ na_payment_label:0 "Pagar con:"
+ na_payment_herd:0 "[herd_i] Grey"
+ na_payment_gold:0 "[gold_i] Oro"
+ na_payment_herd_tooltip:0 "#T Reforzar con grey#!\nGasta grey para reponer soldados al precio habitual del refuerzo nómada, con sus modificadores de habilidad marcial y dificultad. El recurso de pago elegido nunca se sustituye automáticamente."
+ na_payment_gold_tooltip:0 "#T Reforzar con oro#!\nGasta oro para reponer soldados al precio habitual del refuerzo nómada, con sus modificadores de habilidad marcial, dones y dificultad. El recurso de pago elegido nunca se sustituye automáticamente."

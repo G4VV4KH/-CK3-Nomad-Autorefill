@@ -1,8 +1,8 @@
 # Nomad Autorefill — developer guide
 
-This repository contains the portable source for **Nomad Autorefill 0.1.0**,
-targeting CK3 **1.20.0.4** with **Khans of the Steppe**. English and Russian are
-included. The public display name is `Nomad Autorefill`.
+This repository contains the portable source for **Nomad Autorefill 0.1.1**,
+targeting CK3 **1.20.0.4** with **Khans of the Steppe**. English, French, German, Japanese, Korean, Polish, Russian, Simplified Chinese
+and Spanish are included. The public display name is `Nomad Autorefill`.
 
 ## Source layout
 
@@ -15,11 +15,11 @@ included. The public display name is `Nomad Autorefill`.
 | `common/scripted_guis/` | Checkbox and resource-picker commands |
 | `gui/na_autorefill.gui` | The new controls |
 | `gui/window_military.gui` | The single replacement of a vanilla interface file |
-| `localization/` | English and Russian strings |
+| `localization/` | Strings for all nine CK3 languages |
 | `tests/check_source.py` | Portable, read-only static checker |
 | `publishing/description.en.md` | Canonical English publication copy |
 
-The eleven runtime files are the files under `common/`, `gui/` and
+The eighteen runtime files are the files under `common/`, `gui/` and
 `localization/`, plus `descriptor.mod` and `thumbnail.png`. Developer documents,
 tests and `publishing/` are not needed by the game. The launcher descriptor used
 to install a local checkout belongs outside this repository and must point to
@@ -70,7 +70,7 @@ python -B tests/check_source.py
 
 The checker uses only the standard library, resolves the repository from its own
 location, and writes no files. It checks braces, UTF-8 BOMs, localization headers,
-duplicate keys, English/Russian key parity, referenced GUI strings and descriptor
+duplicate keys, nine-language key and control-token parity, referenced GUI strings and descriptor
 identity. This is not a CK3 parser or an engine test. Keep the existing runtime
 encoding and line endings; `.gitattributes` disables checkout normalization.
 
@@ -100,6 +100,22 @@ save. Removing the mod before its pending timer clears, advancing and saving
 without it, then reinstalling can leave a stale pending marker. This guidance
 does not constitute a universal save/removal compatibility guarantee.
 
+## Localization release 0.1.1
+
+This patch adds French, German, Japanese, Korean, Polish, Simplified Chinese and
+Spanish. The existing English/Russian files, game scripts, GUI and thumbnail are
+byte-identical to 0.1.0; only the descriptor version and seven added localization
+files differ in the runtime. The [static localization receipt](tests/localization-validation-0.1.1.json)
+records nine languages, seven keys per language and 63 entries, including BOMs,
+headers, key parity, control tokens and source hashes. Translations received a
+separate semantic review. Static checks and review do not certify native-speaker
+quality or in-game layout for all languages. No fresh native gameplay test was
+performed for this localization-only release.
+
+The historical 0.1.0 native [validation summary](tests/validation-summary.json)
+remains unchanged. Its gameplay evidence applies only to the unchanged scripts,
+and its visual scope remains the original English screenshot.
+
 ## Publication copy and media
 
 Edit [the canonical description](publishing/description.en.md), then regenerate
@@ -117,7 +133,7 @@ the title and complete composition remain visible. The approved gameplay image
 is an authentic user-supplied screenshot, encoded to JPEG with the full frame and
 UI retained. It is not generated artwork.
 
-AI tools were used to develop mod scripts, interface additions, English/Russian
+AI tools were used to develop mod scripts, interface additions, nine-language
 text and publication copy under the owner's brief and review. The replaced Army
 window retains vanilla CK3 content with the mod's additions. Media credits do not
 grant rights to third-party game assets. This repository does not declare a

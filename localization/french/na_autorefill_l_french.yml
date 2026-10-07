@@ -1,0 +1,8 @@
+﻿l_french:
+ na_autorefill_label:0 "Renforcement mensuel"
+ na_autorefill_tooltip:0 "#T Renforcement mensuel#!\nLorsque cette option est activée, vos régiments personnels d’hommes d’armes récupèrent jusqu’à 10% de leur effectif maximal chaque mois. Le premier renforcement a lieu un mois après l’activation. Vous ne payez que pour les soldats effectivement ajoutés, au prix habituel du renforcement des nomades. Si la ressource choisie est insuffisante, moins de soldats reviennent.\n\nLes régiments levés doivent être immobiles sur des terres contrôlées par votre pays ou un allié, sans combattre, piller ni faire du troc. Si un régiment est réparti entre plusieurs armées, il attend dès qu’une de ses parties ne remplit pas ces conditions.\n\nDésactiver cette option arrête le renforcement automatique et les dépenses associées. Le renforcement manuel reste disponible. Cette option est désactivée par défaut pour les nouveaux dirigeants."
+ na_payment_label:0 "Payer avec :"
+ na_payment_herd:0 "[herd_i] Troupeau"
+ na_payment_gold:0 "[gold_i] Or"
+ na_payment_herd_tooltip:0 "#T Renforcer avec du troupeau#!\nDépenser du troupeau pour ajouter des soldats, au prix habituel du renforcement des nomades et avec ses modificateurs de martialité et de difficulté. La ressource de paiement choisie n’est jamais remplacée automatiquement."
+ na_payment_gold_tooltip:0 "#T Renforcer avec de l’or#!\nDépenser de l’or pour ajouter des soldats, au prix habituel du renforcement des nomades et avec ses modificateurs de martialité, d’atouts et de difficulté. La ressource de paiement choisie n’est jamais remplacée automatiquement."

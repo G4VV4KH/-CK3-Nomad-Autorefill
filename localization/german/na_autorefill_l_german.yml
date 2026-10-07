@@ -1,0 +1,8 @@
+﻿l_german:
+ na_autorefill_label:0 "Monatliche Verstärkung"
+ na_autorefill_tooltip:0 "#T Monatliche Verstärkung#!\nSolange diese Option aktiviert ist, werden Eure persönlichen Kriegsvolkregimenter jeden Monat um bis zu 10% ihrer maximalen Truppenstärke aufgefüllt. Die erste Verstärkung erfolgt einen Monat nach der Aktivierung. Bezahlt werden nur die tatsächlich hinzugefügten Soldaten zum üblichen Verstärkungspreis für Nomaden. Reicht die gewählte Ressource nicht aus, kehren weniger Soldaten zurück.\n\nAusgehobene Regimenter müssen stillstehen und sich an Land befinden, das Euer Reich oder ein Verbündeter kontrolliert. Sie dürfen weder kämpfen noch überfallen oder Tauschhandel treiben. Ist ein Regiment auf mehrere Armeen aufgeteilt, wartet es, sobald ein Teil diese Bedingungen nicht erfüllt.\n\nDas Ausschalten beendet die automatische Verstärkung und die damit verbundenen Ausgaben. Manuelle Verstärkung bleibt verfügbar. Bei neuen Herrschern ist diese Option zunächst ausgeschaltet."
+ na_payment_label:0 "Zahlung:"
+ na_payment_herd:0 "[herd_i] Herde"
+ na_payment_gold:0 "[gold_i] Gold"
+ na_payment_herd_tooltip:0 "#T Mit Herde verstärken#!\nGebt Herde aus, um Soldaten zum üblichen Verstärkungspreis für Nomaden aufzufüllen, einschließlich der Modifikatoren durch Kriegsführung und Schwierigkeitsgrad. Die gewählte Zahlungsressource wird niemals automatisch ersetzt."
+ na_payment_gold_tooltip:0 "#T Mit Gold verstärken#!\nGebt Gold aus, um Soldaten zum üblichen Verstärkungspreis für Nomaden aufzufüllen, einschließlich der Modifikatoren durch Kriegsführung, Vorzüge und Schwierigkeitsgrad. Die gewählte Zahlungsressource wird niemals automatisch ersetzt."

@@ -2,10 +2,10 @@
 
 ## At a glance
 
-- 🟢 **Version 0.1.0** · Targets CK3 **1.20.0.4**.
+- 🟢 **Version 0.1.1** · Targets CK3 **1.20.0.4**.
 - 🟢 **Standalone mod. Requires Khans of the Steppe.**
 - 🟢 **Optional monthly reinforcement for your nomadic Men-at-Arms, paid with Herd or Gold.**
-- 🟢 **Languages:** English and Russian.
+- 🟢 **Languages:** English, French, German, Japanese, Korean, Polish, Russian, Simplified Chinese and Spanish.
 - 🔴 **Applies only to your personal, regular Men-at-Arms.** AI rulers keep their normal reinforcement rules.
 - 🔴 **Changes the Army window.** Other mods replacing the same window require a compatibility patch.
 

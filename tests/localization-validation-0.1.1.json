@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "runtime_files": 16,
+  "languages": [
+    "english",
+    "french",
+    "german",
+    "japanese",
+    "korean",
+    "polish",
+    "russian",
+    "simp_chinese",
+    "spanish"
+  ],
+  "localization_keys_per_language": 7,
+  "total_localized_entries": 63,
+  "runtime_sha256": {
+    "common/on_action/na_autorefill_on_actions.txt": "afbb9c91604900e9e212083c4d6054bec8f61cac9401cf0c6c7ed5f383f45830",
+    "common/script_values/na_autorefill_values.txt": "37a9944be545bd31c6710d9b20d27ae24cc96f46bdbbf1d7e4b2cfc5b7c9fae4",
+    "common/scripted_effects/na_autorefill_effects.txt": "9bdc05743c192a78ab75f1a218bf96ca27b92148804c2a44ec292aeb6d981706",
+    "common/scripted_guis/na_autorefill_guis.txt": "81ba5a3b87d5a83f32307d273b18cf95de7c7269729d6f2c20cb12d77f87b459",
+    "common/scripted_triggers/na_autorefill_triggers.txt": "0fd26b8c8512567cbf3c0e626aa4f29c9b7a86c38affcc49809692b421703b2e",
+    "gui/na_autorefill.gui": "0d203860d995f624b9ec410bf3cbd77631c439c05030b2b80c00b2e53a819189",
+    "gui/window_military.gui": "2e5fc7f8a5ed8328a76f34de96f8ad89652a8ae5474bf6749c312e0b5c007854",
+    "localization/english/na_autorefill_l_english.yml": "84fd252eb78710e04e3000280c3277a4f7ab44bfdb9c63ac66c973d2913e39b9",
+    "localization/french/na_autorefill_l_french.yml": "3f921a8f2adc8929e8747863ef73c1c14b2d8acbbe8874cd9fb3e5bc6a570466",
+    "localization/german/na_autorefill_l_german.yml": "650f605a7ead704f707c2392fffb0248ca59373a22456abea4a4b7d153c9de02",
+    "localization/japanese/na_autorefill_l_japanese.yml": "95910094b61e0354c53aaf047fa57f44b36bd8a60f3733159371a214426e6ee4",
+    "localization/korean/na_autorefill_l_korean.yml": "2a5bdccbfb9b01e7da561551166c8ea3460c7e2f56730dda441732913aa2b32a",
+    "localization/polish/na_autorefill_l_polish.yml": "7b42b019827185b2567f715b950318553d0a3efb6f7ec529db63a9c70c7f9610",
+    "localization/russian/na_autorefill_l_russian.yml": "59c671474b53a3a464f183d10590cc8c2fb0062b3dfb569011c47b3416a63499",
+    "localization/simp_chinese/na_autorefill_l_simp_chinese.yml": "f9e6bde38ef34b498253a468f3b33e92620630e11fe6b58e77e3e3d528887c95",
+    "localization/spanish/na_autorefill_l_spanish.yml": "4542dcf017437545377a432f389792be49edf25c3c708d11d80f9439ffae1ed3"
+  },
+  "mod": "nomad_autorefill",
+  "version": "0.1.1",
+  "engine_test_performed": false,
+  "validation_scope": "Static source and localization validation; native gameplay evidence remains historical",
+  "source_validation_sha256": "50d764f10dcc726c1d57c209aaed4cbe225e0f5b42a4eb3993dff38287c26320",
+  "scope": "Static localization checks; historical native gameplay and English visual evidence retained separately. No new all-language visual/native claim."
+}

@@ -1,0 +1,8 @@
+﻿l_polish:
+ na_autorefill_label:0 "Miesięczne uzupełnienie"
+ na_autorefill_tooltip:0 "#T Miesięczne uzupełnienie#!\nGdy ta opcja jest włączona, twoje osobiste pułki zbrojnych odzyskują co miesiąc do 10% swojej maksymalnej liczebności. Pierwsze uzupełnienie następuje miesiąc po włączeniu opcji. Płacisz wyłącznie za faktycznie dodanych żołnierzy, według zwykłego kosztu uzupełniania wojsk nomadów. Jeśli wybranego zasobu nie wystarcza, powraca mniej żołnierzy.\n\nWystawione pułki muszą pozostawać w miejscu na lądzie kontrolowanym przez twoje państwo lub sojusznika. Nie mogą walczyć, najeżdżać ani prowadzić handlu wymiennego. Jeśli pułk jest podzielony między kilka armii, czeka, gdy choć jedna jego część nie spełnia tych warunków.\n\nWyłączenie tej opcji zatrzymuje automatyczne uzupełnianie i związane z nim opłaty. Ręczne uzupełnianie pozostaje dostępne. U nowych władców ta opcja jest domyślnie wyłączona."
+ na_payment_label:0 "Opłata:"
+ na_payment_herd:0 "[herd_i] Gromada"
+ na_payment_gold:0 "[gold_i] Złoto"
+ na_payment_herd_tooltip:0 "#T Uzupełniaj za gromadę#!\nWydawaj gromadę na uzupełnianie żołnierzy według zwykłego kosztu uzupełniania wojsk nomadów, z uwzględnieniem modyfikatorów umiejętności walki i poziomu trudności. Wybrany zasób płatności nigdy nie jest automatycznie zastępowany innym."
+ na_payment_gold_tooltip:0 "#T Uzupełniaj za złoto#!\nWydawaj złoto na uzupełnianie żołnierzy według zwykłego kosztu uzupełniania wojsk nomadów, z uwzględnieniem modyfikatorów umiejętności walki, atrybutów i poziomu trudności. Wybrany zasób płatności nigdy nie jest automatycznie zastępowany innym."
