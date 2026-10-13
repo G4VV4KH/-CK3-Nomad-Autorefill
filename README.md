@@ -2,7 +2,7 @@
 
 ## At a glance
 
-- 🟢 **Version 0.1.1** · Targets CK3 **1.20.0.4**.
+- 🟢 **Version 0.1.2** · Targets CK3 **1.20.1**.
 - 🟢 **Standalone mod. Requires Khans of the Steppe.**
 - 🟢 **Optional monthly reinforcement for your nomadic Men-at-Arms, paid with Herd or Gold.**
 - 🟢 **Languages:** English, French, German, Japanese, Korean, Polish, Russian, Simplified Chinese and Spanish.
@@ -86,6 +86,6 @@ For a reinforcement problem, include your CK3 version, other active mods, select
 
 Cover artwork was generated with AI.
 
-## Contributing
+## Gallery
 
-See [the developer guide](dev.md) for implementation details, validation and the maintained source workflow.
+![Monthly reinforcement controls in the Army window.](publishing/media/GALLERY/01-monthly-reinforcement.jpg)
