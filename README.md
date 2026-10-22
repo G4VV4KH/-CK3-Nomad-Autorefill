@@ -2,7 +2,7 @@
 
 ## At a glance
 
-- 🟢 **Version 0.1.2** · Targets CK3 **1.20.1.1**.
+- 🟢 **Version 0.1.2** · Targets CK3 **1.20.1.2**.
 - 🟢 **Standalone mod. Requires Khans of the Steppe.**
 - 🟢 **Optional monthly reinforcement for your nomadic Men-at-Arms, paid with Herd or Gold.**
 - 🟢 **Languages:** English, French, German, Japanese, Korean, Polish, Russian, Simplified Chinese and Spanish.
