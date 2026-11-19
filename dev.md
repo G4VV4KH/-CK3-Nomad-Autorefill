@@ -1,5 +1,11 @@
 # Nomad Autorefill — developer guide
 
+## 0.1.3 for CK3 1.21.0.3
+
+Rebased the military window on CK3 1.21.0.3 Florin. Nomadic refill controls coexist with the updated title troops and mercenary interfaces.
+
+## Earlier development notes
+
 This repository contains the portable source for **Nomad Autorefill 0.1.1**,
 targeting CK3 **1.20.0.4** with **Khans of the Steppe**. English, French, German, Japanese, Korean, Polish, Russian, Simplified Chinese
 and Spanish are included. The public display name is `Nomad Autorefill`.
