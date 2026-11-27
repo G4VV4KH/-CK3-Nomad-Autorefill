@@ -9,6 +9,10 @@
 - 🔴 **Applies only to your personal, regular Men-at-Arms.** AI rulers keep their normal reinforcement rules.
 - 🔴 **Changes the Army window.** Other mods replacing the same window require a compatibility patch.
 
+## Available compatibility patches
+
+- [[compatch] SA + NA](https://steamcommunity.com/sharedfiles/filedetails/?id=3846587662) — use Strategist Assistant and Nomad Autorefill in the same Military window.
+
 ## Keep the horde ready
 
 Let your regiments recover over time without repeatedly opening the manual reinforcement interaction. Choose the resource you want to spend, then decide when automatic reinforcement should run.
@@ -85,6 +89,7 @@ For a reinforcement problem, include your CK3 version, other active mods, select
 ### Compatibility patches
 
 - [[compatch] CAA + CA](https://steamcommunity.com/sharedfiles/filedetails/?id=3816373375) — use Council Assignment Automation and Council Autopilot together.
+- [[compatch] SA + NA](https://steamcommunity.com/sharedfiles/filedetails/?id=3846587662) — use Strategist Assistant and Nomad Autorefill in the same Military window.
 
 ## Credits
 
